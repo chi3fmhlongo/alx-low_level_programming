@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CFILE="main.c"  
+OUTPUT_FILE="cisfun"
+
+gcc "$CFILE" -o "$OUTPUT_FILE"
