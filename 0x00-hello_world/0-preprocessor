@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E "0-preprocessor.c" -o c
+export CFILE="0-main.c" && gcc -o 0-preprocessor "$CFILE" && ./0-preprocessor
