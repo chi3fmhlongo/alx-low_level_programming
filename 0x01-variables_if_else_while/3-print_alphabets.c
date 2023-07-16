@@ -1,13 +1,22 @@
 #include <stdio.h>
-
-int main() {
+/**
+ * main - Entry point of the program
+ *
+ * Description:  prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+ *
+ * Return: 0 (Success)
+ */
+int main() 
+{
     char letter;
     
-    for (letter = 'a'; letter <= 'z'; letter++) {
+    for (letter = 'a'; letter <= 'z'; letter++) 
+    {
         putchar(letter);
     }
     
-    for (letter = 'A'; letter <= 'Z'; letter++) {
+    for (letter = 'A'; letter <= 'Z'; letter++) 
+    {
         putchar(letter);
     }
     
