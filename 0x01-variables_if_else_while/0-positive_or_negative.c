@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
  * main - Entry point of the program
  *
@@ -12,12 +11,9 @@
 int main(void)
 {
     int n;
-
     srand(time(NULL));
     n = 98;
-
     printf("%d is ", n);
-
     if (n > 0) {
         printf("positive");
     } else if (n < 0) {
@@ -25,8 +21,6 @@ int main(void)
     } else {
         printf("zero");
     }
-
     printf("\n");
-
     return (0);
 }
