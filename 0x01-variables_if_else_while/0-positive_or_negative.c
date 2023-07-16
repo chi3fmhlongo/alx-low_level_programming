@@ -6,20 +6,19 @@ int main() {
     int n;
 
     srand(time(NULL));
-    n = rand();
+    n = rand() % 199 - 99;
 
-    printf("The number %d ", n);
-    
+    printf("The number %d is ", n);
+
     if (n > 0) {
-        printf("is positive");
-    } else if (n == 0) {
-        printf("is zero");
+        printf("positive");
+    } else if (n < 0) {
+        printf("negative");
     } else {
-        printf("is negative");
+        printf("zero");
     }
-    
+
     printf("\n");
-    
+
     return 0;
 }
-
