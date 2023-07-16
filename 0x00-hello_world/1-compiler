@@ -1,4 +1,2 @@
 #!/bin/bash
-
-gcc -c "$CFILE" -o "${CFILE%.*}.o"
-
+gcc -c "main.c" -o "${CFILE%.*}.o"
