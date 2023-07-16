@@ -1,16 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
-    int n = 98;
-    const char* messages[] = { "negative", "zero", "positive" };
+    int n;
 
-    printf("%d is %s\n", n, messages[n < 0 ? 0 : (n > 0 ? 2 : 1)]);
+    srand(time(NULL));
+    n = 98;
 
-    n = -98;
-    printf("%d is %s\n", n, messages[n < 0 ? 0 : (n > 0 ? 2 : 1)]);
+    printf("%d is ", n);
 
-    n = 0;
-    printf("%d is %s\n", n, messages[n < 0 ? 0 : (n > 0 ? 2 : 1)]);
+    if (n > 0) {
+        printf("positive");
+    } else if (n < 0) {
+        printf("negative");
+    } else {
+        printf("zero");
+    }
+
+    printf("\n");
 
     return 0;
 }
