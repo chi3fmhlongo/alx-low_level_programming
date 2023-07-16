@@ -15,23 +15,23 @@ int main(void)
     int lastDigit;
 
     srand(time(NULL));
-    n = rand() % 10;  // Generate a random number between 0 and 9 (inclusive)
+    n = 98;
 
-    lastDigit = n;
+    lastDigit = n % 10;
 
-    printf("Last digit of %d is %d and is ", n, lastDigit);
+    printf("Last digit of %d is ", n);
 
     if (lastDigit > 5)
     {
-        printf("greater than 5");
+        printf("%d and is greater than 5", lastDigit);
     }
     else if (lastDigit == 0)
     {
-        printf("0");
+        printf("%d and is 0", lastDigit);
     }
     else
     {
-        printf("less than 6 and not 0");
+        printf("%d and is less than 6 and not 0", lastDigit);
     }
 
     printf("\n");
