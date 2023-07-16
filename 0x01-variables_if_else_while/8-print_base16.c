@@ -1,23 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    putchar('0');
-    putchar('1');
-    putchar('2');
-    putchar('3');
-    putchar('4');
-    putchar('5');
-    putchar('6');
-    putchar('7');
-    putchar('8');
-    putchar('9');
-    putchar('a');
-    putchar('b');
-    putchar('c');
-    putchar('d');
-    putchar('e');
-    putchar('f');
-    
+    char ch;
+
+    for (ch = '0'; ch <= '9'; ch++) {
+        putchar(ch);
+    }
+
+    for (ch = 'a'; ch <= 'f'; ch++) {
+        putchar(ch);
+    }
+
     putchar('\n');
 
     return 0;
