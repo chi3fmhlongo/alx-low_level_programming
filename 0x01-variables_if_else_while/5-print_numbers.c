@@ -6,10 +6,12 @@
  *
  * Return: 0 (Success)
  */
-int main() {
+int main() 
+{
     int number;
 
-    for (number = 0; number <= 9; number++) {
+    for (number = 0; number <= 9; number++) 
+    {
         putchar('0' + number);
     }
 
