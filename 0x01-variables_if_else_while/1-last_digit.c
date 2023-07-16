@@ -2,7 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+/**
+ * main - Entry point of the program
+ *
+ * Description: Generates a random number and prints the last digit
+ *              along with its properties.
+ *
+ * Return: 0 (Success)
+ */
+int main(void)
+{
     int n;
 
     srand(time(NULL));
@@ -22,5 +31,5 @@ int main() {
 
     printf("\n");
 
-    return 0;
+    return (0);
 }
