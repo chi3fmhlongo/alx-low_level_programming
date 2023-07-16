@@ -8,14 +8,14 @@ int main() {
     srand(time(NULL));
     n = 98;
 
-    printf("The number %d is ", n);
+    printf("%d is ", n);
 
     if (n > 0) {
         printf("positive");
     } else if (n < 0) {
         printf("negative");
     } else {
-        printf("zero");
+        printf(0);
     }
 
     printf("\n");
