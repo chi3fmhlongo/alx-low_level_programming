@@ -1,12 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 int main() {
-    int n;
-
-    srand(time(NULL));
-    n = 98;
+    int n = 98;
 
     printf("%d is ", n);
 
