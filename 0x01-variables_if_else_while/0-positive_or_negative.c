@@ -3,16 +3,9 @@
 int main() {
     int n = 98;
 
-    printf("%d is ", n);
-
-    if (n > 0) {
-        printf("positive");
-    } else if (n < 0) {
-        printf("negative");
-    } else {
-        printf("zero");
-    }
-
+    printf(n ," is positive");
+    printf("-", n,"is negative");
+    printf("0"," is zero");
     printf("\n");
 
     return 0;
