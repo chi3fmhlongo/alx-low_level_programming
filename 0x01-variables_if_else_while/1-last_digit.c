@@ -5,8 +5,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: Generates a random number and prints the last digit
- *              along with its properties.
+ * Description: Prints the last digit of a random number.
  *
  * Return: 0 (Success)
  */
@@ -21,11 +20,16 @@ int main(void)
 
     int lastDigit = n % 10;
 
-    if (lastDigit > 5) {
+    if (lastDigit > 5)
+    {
         printf("%d and is greater than 5", lastDigit);
-    } else if (lastDigit == 0) {
+    }
+    else if (lastDigit == 0)
+    {
         printf("%d and is 0", lastDigit);
-    } else {
+    }
+    else
+    {
         printf("%d and is less than 6 and not 0", lastDigit);
     }
 
