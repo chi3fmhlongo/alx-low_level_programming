@@ -2,24 +2,36 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+/**
+ * main - Entry point of the program
+ *
+ * Description: Prints the properties of a number.
+ *
+ * Return: 0 (Success)
+ */
+int main(void)
+{
     int n;
 
     srand(time(NULL));
-    n = rand();
+    n = 98;
 
-    printf("The number %d ", n);
-    
-    if (n > 0) {
-        printf("is positive");
-    } else if (n == 0) {
-        printf("is zero");
-    } else {
-        printf("is negative");
+    printf("%d is ", n);
+
+    if (n > 0)
+    {
+        printf("positive");
     }
-    
-    printf("\n");
-    
-    return 0;
-}
+    else if (n < 0)
+    {
+        printf("negative");
+    }
+    else
+    {
+        printf("zero");
+    }
 
+    printf("\n");
+
+    return (0);
+}
