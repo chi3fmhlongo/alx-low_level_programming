@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 /* Function prototypes */
+int _putchar(char c);
 int add(int a, int b);
 int subtract(int a, int b);
 int multiply(int a, int b);
