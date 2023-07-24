@@ -1,1 +1,1 @@
-Creating or Learning Pointers, Arrays and strings
+Creating and Learning Pointers, Arrays and strings in C language
