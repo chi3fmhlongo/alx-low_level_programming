@@ -5,31 +5,32 @@
 *@str: string to capitalize
 *Return:returns the capitalized string
 */
-char *cap_string(char *str) {
-    int i = 0;
+char *cap_string(char *s)
+{
+	int i, j;
+	int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-    // Capitalize first character of the string
-    if (str[i] >= 'a' && str[i] <= 'z') {
-        str[i] = toupper(str[i]);
-    }
-
-    // Loop through the string
-    while (str[i] != '\0') {
-        // Check for separators and capitalize the next character after them
-        if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' || str[i] == ';' || str[i] == '.' ||
-            str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
-        {
-            i++; // Move to the next character after the separator
-
-            // Capitalize the next character if it's a lowercase letter
-            if (str[i] >= 'a' && str[i] <= 'z') {
-                str[i] = toupper(str[i]);
-            }
-        } else {
-            i++; // Move to the next character
-        }
-    }
-
-    return str;
+	i = 0;
+	while (*(s + i) != '\0')
+	{
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		{
+			if (i == 0)
+			{
+				*(s + i) = *(s + i) - 32;
+			}
+			else
+			{
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+					{
+						*(s + i) = *(s + i) - 32;
+					}
+				}
+			}
+		}
+	i++;
+	}
+	return (s);
 }
-
