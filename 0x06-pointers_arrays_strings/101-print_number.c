@@ -1,31 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
- * print_number - Prints an integer using _putchar
- * @n: The integer to be printed
- */
-void print_number(int n)
+int main(void)
 {
-    int divisor = 1;
+  int n;
+  int a[5];
+  int *p;
 
-    // Handle negative numbers
-    if (n < 0)
-    {
-        _putchar('-');
-        n = -n;
-    }
-
-    // Find the divisor to get the leftmost digit
-    while (n / divisor >= 10)
-    {
-        divisor *= 10;
-    }
-
-    // Print each digit one by one
-    while (divisor != 0)
-    {
-        _putchar('0' + n / divisor);
-        n %= divisor;
-        divisor /= 10;
-    }
+  a[2] = 1024;
+  p = &n;
+  /*
+   * write your line of code here...
+   * Remember:
+   * - you are not allowed to use a
+   * - you are not allowed to modify p
+   * - only one statement
+   * - you are not allowed to code anything else than this line of code
+   */
+  *(p + 5) = 98;
+  /* ...so that this prints 98\n */
+  printf("a[2] = %d\n", a[2]);
+  return (0);
 }
