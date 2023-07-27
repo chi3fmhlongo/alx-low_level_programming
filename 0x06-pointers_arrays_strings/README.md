@@ -1,0 +1,1 @@
+Create pointers and Arrays as well as Strings
