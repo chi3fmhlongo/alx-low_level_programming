@@ -1,7 +1,32 @@
 #include "main.h"
 
+int _putchar(char c)
+{
+    return write(1, &c, 1);
+}
+
 /**
- * main - check the code.
+ * print_number - Prints an integer using _putchar
+ * @n: The integer to be printed
+ */
+void print_number(int n)
+{
+    if (n < 0)
+    {
+        _putchar('-');
+        n = -n;
+    }
+
+    if (n / 10 != 0)
+    {
+        print_number(n / 10);
+    }
+
+    _putchar('0' + n % 10);
+}
+
+/**
+ * main - check the code
  *
  * Return: Always 0.
  */
