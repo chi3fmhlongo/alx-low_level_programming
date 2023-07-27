@@ -1,32 +1,35 @@
 #include "main.h"
+#include <ctype.h>
 /**
 *cap_string - function that capitalize first character of a word
 *@str: string to capitalize
 *Return:returns the capitalized string
 */
-char *cap_string(char *str)
-{
-	int index = 0;
+char *cap_string(char *str) {
+    int i = 0;
 
-	while (str[++index])
-	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
+    // Capitalize first character of the string
+    if (str[i] >= 'a' && str[i] <= 'z') {
+        str[i] = toupper(str[i]);
+    }
 
-		if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}')
-			str[index] -= 32;
-	}
-	return (str);
+    // Loop through the string
+    while (str[i] != '\0') {
+        // Check for separators and capitalize the next character after them
+        if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' || str[i] == ';' || str[i] == '.' ||
+            str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
+        {
+            i++; // Move to the next character after the separator
+
+            // Capitalize the next character if it's a lowercase letter
+            if (str[i] >= 'a' && str[i] <= 'z') {
+                str[i] = toupper(str[i]);
+            }
+        } else {
+            i++; // Move to the next character
+        }
+    }
+
+    return str;
 }
+
