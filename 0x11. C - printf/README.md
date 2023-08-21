@@ -1,5 +1,5 @@
-# 0x11. C - printf 
+# 0x11. C - printf Project
 
-# Created By Siyabonga Khwela & Syanda Mntambo
+# Siyabonga Khwela & Syanda Mntambo
 
 A collaborative project by ALX Software Engineering to implement the inbuilt "printf" function in c language.
