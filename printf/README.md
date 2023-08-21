@@ -2,4 +2,4 @@
 
 # Created By Siyabonga Khwela & Syanda Mntambo
 
-A collaborative project by ALX Software Engineering to implement the inbuilt "printf" function in c.
+A collaborative project by ALX Software Engineering to implement the inbuilt "printf" function in C language.
